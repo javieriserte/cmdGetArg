@@ -18,7 +18,7 @@ import cmdGA.parameterType.BooleanParameter;
  *
  */
 public class NoOption extends Option {
-	protected boolean value = false;
+	protected Boolean value = false;
 	// CONSTRUCTORS
 	/**
 	 * Creates a new instance of NoOption
@@ -64,6 +64,7 @@ public class NoOption extends Option {
 	 * @return the value of the option
 	 */
 	public boolean getValue(){
+		if (this.value==null) return (Boolean) this.defaultValue;
 		return this.value;
 	}
 }
