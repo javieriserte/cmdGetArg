@@ -18,7 +18,7 @@ import cmdGA.parameterType.BooleanParameter;
  *
  */
 public class NoOption extends Option {
-	protected Boolean value = false;
+	protected Boolean value = null;
 	// CONSTRUCTORS
 	/**
 	 * Creates a new instance of NoOption
