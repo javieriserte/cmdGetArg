@@ -1,0 +1,9 @@
+------------------------------------
+Next features and Fixes of cmdGetArg
+------------------------------------
+1 - Create ParameterType subclases for:
+	- FileParameter  // Returns File
+	- ExistingFileParameter // Returns a File and verifies that it exists. Usefull for input files.
+2 - Develop Test Case Units
+3 - Include more examples.
+	
