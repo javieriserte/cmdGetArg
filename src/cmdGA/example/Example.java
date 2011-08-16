@@ -19,7 +19,7 @@ import cmdGA.parameterType.*;
  * Examples of use of cmdGA package.
  *   
  * @author Javier Iserte <jiserte@unq.edu.ar>
- * @version 1.1.1
+ * 
  * 
  */
 public class Example {
