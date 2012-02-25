@@ -3,7 +3,13 @@ Next features and Fixes of cmdGetArg
 ------------------------------------
 1 - Create ParameterType subclases for:
 	- FileParameter  // Returns File
-	- ExistingFileParameter // Returns a File and verifies that it exists. Usefull for input files.
+	- ExistingFileParameter // Returns a File and verifies that it exists. Useful for input files.
+	This is almost done and improved in LogoDrawer Project.
+	There is also a FontParameter in LogoDrawer.
+	// DONE
 2 - Develop Test Case Units
 3 - Include more examples.
+4 - Don't search options in quoted ("" or '') text.
+5 - NoOption must always be false by default.
+    //DONE 
 	

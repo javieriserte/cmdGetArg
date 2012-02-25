@@ -8,6 +8,8 @@
  */
 
 package cmdGA;
+
+
 import cmdGA.exceptions.IncorrectParameterTypeException;
 import cmdGA.parameterType.BooleanParameter;
 /**
@@ -28,6 +30,7 @@ public class NoOption extends Option {
 	 * @param name The string that is used to call this option in the command line.
 	 * @param alias An alias for the name.
 	 */
+	@Deprecated
 	public NoOption(Parser parser, Object defaultValue, String name, String alias) {
 		super(parser, defaultValue, name, alias, new BooleanParameter());
 	}
@@ -39,11 +42,35 @@ public class NoOption extends Option {
 	 * @param name The string that is used to call this option in the command line.
 	 * @param alias An alias for the name.
 	 */
+	public NoOption(Parser parser, String name) {
+		super(parser, false, name, new BooleanParameter());
+
+	}
+	/**
+	 * Creates a new instance of NoOption
+	 * 
+	 * @param parser An instance of Parser that is linked to the option.
+	 * @param defaultValue The default value returned 
+	 * @param name The string that is used to call this option in the command line.
+	 * @param alias An alias for the name.
+	 */
+	public NoOption(Parser parser, String name, String alias) {
+		super(parser, false, name, new BooleanParameter());
+
+	}
+	/**
+	 * Creates a new instance of NoOption
+	 * 
+	 * @param parser An instance of Parser that is linked to the option.
+	 * @param defaultValue The default value returned 
+	 * @param name The string that is used to call this option in the command line.
+	 * @param alias An alias for the name.
+	 */
+	@Deprecated
 	public NoOption(Parser parser, Object defaultValue, String name) {
 		super(parser, defaultValue, name, new BooleanParameter());
 
 	}
-
 	// PUBLIC METHODS
 
 	/**
