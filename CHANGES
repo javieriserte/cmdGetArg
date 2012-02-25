@@ -9,6 +9,6 @@ CHANGE LOG
 	Ver 1.1.3 : Corrected a bug in NoOption class.
 	
 #Feb 25th, 2012
-    Ver 1.1.4 : NoOption Class constructor added to avoid add default value (it is always false).
+    Ver 1.1.5 : NoOption Class constructor added to avoid add default value (it is always false).
                 Added ParameterType: InFileParameter, InputStreamParameter, OutFileParameter, PrintStreamParameter.
                 	
