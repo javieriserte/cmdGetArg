@@ -46,6 +46,7 @@ public class Example {
 		MultipleOption val = new MultipleOption(parser, 4, "-val", ',', IntegerParameter.getParameter());
 			// Option 'val' requires one or more integer arguments. The parameter name is '-val'. The default value is 4. Had not alias.
 		MultipleOption val2 = new MultipleOption(parser, 2, "--va2", ',', IntegerParameter.getParameter());
+		@SuppressWarnings("deprecation")
 		NoOption opt = new NoOption(parser, false, "--opt");
 			// Option 'opt' requires no arguments. The parameter name is '--opt'. The default value is false. Had not alias.
 		
