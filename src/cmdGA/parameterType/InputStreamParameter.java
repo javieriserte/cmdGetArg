@@ -50,8 +50,5 @@ public class InputStreamParameter extends ParameterType {
 			}
 			return (Object) is;
 		}
-		
-
-
 }
 
