@@ -11,4 +11,6 @@ CHANGE LOG
 #Feb 25th, 2012
     Ver 1.1.5 : NoOption Class constructor added to avoid add default value (it is always false).
                 Added ParameterType: InFileParameter, InputStreamParameter, OutFileParameter, PrintStreamParameter.
+#Jan 21th, 2013
+	Ver 1.1.6 : Fixed a bug that crashes when an empty command line is sent to parse. 
                 	

@@ -42,8 +42,10 @@ public class Parser {
 			if (next==null) {
 				// next is null when no option is found in the command line.
 				// when next is null, means that no more options remains in the command line.
-				currentOption.setValue(cm);
+				
+				if (!cm.equals(""))	currentOption.setValue(cm);
 					// cm contains the last, non-processed part of the command line.
+       				// if cm is "" may indicate an empty command line
 			} else {
 				if (currentOption!=null) {
 					// currentOption is null when the first option is found in the command line.
@@ -163,11 +165,15 @@ public class Parser {
 	 * @return a string with array joined.
 	 */
 	protected String arrayToStr(String[] arg) {
+		if (arg.length>0) {
 		String args=arg[0];
 			// The first element is treated specially
 		for (int i=1;i<arg.length;i++) {args = args + " "+ arg[i] ;}
 			// add the next elements of the array 
 		return args;
 			// return the final value
+		} else {
+			return "";
+		}
 	}
 }

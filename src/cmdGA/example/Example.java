@@ -26,7 +26,7 @@ public class Example {
 	
 	public static void main(String[] arg) {
 
-		arg = "--greetings hi -float 0.34 -int 2 -val 1, 2, 3, 4, 5 --string \"this is a string\" --opt -bool true --va2 1".split(" ");
+//		arg = "--greetings hi -float 0.34 -int 2 -val 1, 2, 3, 4, 5 --string \"this is a string\" --opt -bool true --va2 1".split(" ");
 		// arg contains a command line like array.
 		
 		// STEP ONE:
