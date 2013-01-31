@@ -1,7 +1,7 @@
-cmdGA Package Version Number 1.1.7
+cmdGA Package Version Number 1.1.8
 	Major Version Number: 1
 	Minor Version Number: 1
-	Revision : 7  
+	Revision : 8  
 
 	Major Version Number: Changes only when the entire design of the project changes.
 	Minor Revision Number: Changes when a new feature is added, or any important algorithm is optimized. Or Thing such that. Even number indicates stables release, Odd number indicates non stables releases.

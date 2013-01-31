@@ -88,7 +88,7 @@ public class MultipleOption extends Option {
 	 */
 	public Object getValue(int position) {
 		if (this.values==null) {
-			return this.defaultValue;
+			return ((Object[])this.defaultValue)[position];
 		}
 		return this.values[position];
 	}
