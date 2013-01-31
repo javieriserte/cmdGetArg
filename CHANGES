@@ -13,4 +13,7 @@ CHANGE LOG
                 Added ParameterType: InFileParameter, InputStreamParameter, OutFileParameter, PrintStreamParameter.
 #Jan 21th, 2013
 	Ver 1.1.6 : Fixed a bug that crashes when an empty command line is sent to parse. 
+
+#Jan 31th, 2013
+	Ver 1.1.7 : Fixed a bug that crashes when a wrongly formed command line is sent to parse. 
                 	

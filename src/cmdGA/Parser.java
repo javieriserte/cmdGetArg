@@ -43,7 +43,7 @@ public class Parser {
 				// next is null when no option is found in the command line.
 				// when next is null, means that no more options remains in the command line.
 				
-				if (!cm.equals(""))	currentOption.setValue(cm);
+				if (!cm.equals("") && currentOption!=null)	currentOption.setValue(cm);
 					// cm contains the last, non-processed part of the command line.
        				// if cm is "" may indicate an empty command line
 			} else {
