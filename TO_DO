@@ -12,4 +12,5 @@ Next features and Fixes of cmdGetArg
 4 - Don't search options in quoted ("" or '') text.
 5 - NoOption must always be false by default.
     //DONE 
+6 - Make SingleOption and MultipleOption to be raw types. 
 	
