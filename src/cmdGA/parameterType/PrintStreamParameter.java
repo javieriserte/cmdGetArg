@@ -6,14 +6,14 @@ import java.io.PrintStream;
 
 import cmdGA.parameterType.ParameterType;
 
+/**
+ * This Class represents a PrintStream parameter in a command line.
+ * The usual default value for this parameter type is the standard output.
+ * 
+ * @author Javier Iserte <jiserte@unq.edu.ar>
+ *
+ */
 public class PrintStreamParameter extends ParameterType {
-	/**
-	 * This Class represents a PrintStream parameter in a command line.
-	 * The usual default value for this parameter type is the standard output.
-	 * 
-	 * @author Javier Iserte <jiserte@unq.edu.ar>
-	 *
-	 */
 		protected static ParameterType singleton = new PrintStreamParameter();
 		/**
 		 * No instance variables are used, so there is no need of more than one instance.

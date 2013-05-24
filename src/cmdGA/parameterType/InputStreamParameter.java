@@ -7,15 +7,17 @@ import java.io.InputStream;
 
 import cmdGA.parameterType.ParameterType;
 
+/**
+ * This Class represents a InputStream parameter in a command line created from an existing file.
+ * The usual default value for this parameter type is the standard input.
+ * 
+ * @author Javier Iserte <jiserte@unq.edu.ar>
+ *
+ */
+
 public class InputStreamParameter extends ParameterType {
-	/**
-	 * This Class represents a InputStream parameter in a command line created from an existing file.
-	 * The usual default value for this parameter type is the standard input.
-	 * 
-	 * @author Javier Iserte <jiserte@unq.edu.ar>
-	 *
-	 */
-		protected static ParameterType singleton = new InputStreamParameter();
+
+	protected static ParameterType singleton = new InputStreamParameter();
 		/**
 		 * No instance variables are used, so there is no need of more than one instance.
 		 * A 'singleton' pattern is implemented. 

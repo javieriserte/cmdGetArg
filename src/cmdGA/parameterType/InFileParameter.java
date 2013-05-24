@@ -2,14 +2,16 @@ package cmdGA.parameterType;
 
 import java.io.File;
 
+/**
+ * This Class represents a File parameter in a command line created from an existing filepath.
+ * 
+ * @author Javier Iserte <jiserte@unq.edu.ar>
+ *
+ */
+
 public class InFileParameter extends ParameterType {
-	/**
-	 * This Class represents a File parameter in a command line created from an existing filepath.
-	 * 
-	 * @author Javier Iserte <jiserte@unq.edu.ar>
-	 *
-	 */
-		protected static ParameterType singleton = new InFileParameter();
+
+	protected static ParameterType singleton = new InFileParameter();
 		/**
 		 * No instance variables are used, so there is no need of more than one instance.
 		 * A 'singleton' pattern is implemented. 

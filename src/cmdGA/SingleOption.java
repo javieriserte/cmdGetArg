@@ -27,7 +27,6 @@ public class SingleOption extends Option {
 	 * @param parser An instance of Parser that is linked to the option.
 	 * @param defaultValue The default value returned 
 	 * @param name The string that is used to call this option in the command line.
-	 * @param alias An alias for the name.
 	 * @param type An instance of ParameterType that represents the type of the value returned.
 	 */
 	public SingleOption(Parser parser, Object defaultValue, String name, ParameterType type) {
@@ -50,7 +49,7 @@ public class SingleOption extends Option {
 	/**
 	 * Parses that string that represents the arguments and set its value to the option.
 	 * 
-	 * @param string Is a string that represents the arguments for an option.
+	 * @param value Is a string that represents the arguments for an option.
 	 */
 	@Override
 	public void setValue(String value) throws IncorrectParameterTypeException {

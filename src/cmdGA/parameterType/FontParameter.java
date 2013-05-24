@@ -3,14 +3,16 @@ package cmdGA.parameterType;
 import java.awt.Font;
 import cmdGA.parameterType.ParameterType;
 
+/**
+ * This Class represents a Font parameter in a command line.
+ * 
+ * @author Javier Iserte <jiserte@unq.edu.ar>
+ *
+ */
+
 public class FontParameter extends ParameterType {
-	/**
-	 * This Class represents a Font parameter in a command line.
-	 * 
-	 * @author Javier Iserte <jiserte@unq.edu.ar>
-	 *
-	 */
-		protected static FontParameter singleton = new FontParameter();
+
+	protected static FontParameter singleton = new FontParameter();
 		/**
 		 * No instance variables are used, so there is no need of more than one instance.
 		 * A 'singleton' pattern is implemented. 

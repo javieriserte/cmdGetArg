@@ -60,7 +60,7 @@ public class MultipleOption extends Option {
 	/**
 	 * Parses that string that represents the arguments and set its value to the option.
 	 * 
-	 * @param string Is a string that represents the arguments for an option.
+	 * @param value Is a string that represents the arguments for an option.
 	 */
 	@Override
 	public void setValue(String value) throws IncorrectParameterTypeException {

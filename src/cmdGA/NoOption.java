@@ -38,9 +38,7 @@ public class NoOption extends Option {
 	 * Creates a new instance of NoOption
 	 * 
 	 * @param parser An instance of Parser that is linked to the option.
-	 * @param defaultValue The default value returned 
 	 * @param name The string that is used to call this option in the command line.
-	 * @param alias An alias for the name.
 	 */
 	public NoOption(Parser parser, String name) {
 		super(parser, false, name, new BooleanParameter());
@@ -50,7 +48,6 @@ public class NoOption extends Option {
 	 * Creates a new instance of NoOption
 	 * 
 	 * @param parser An instance of Parser that is linked to the option.
-	 * @param defaultValue The default value returned 
 	 * @param name The string that is used to call this option in the command line.
 	 * @param alias An alias for the name.
 	 */
@@ -64,21 +61,22 @@ public class NoOption extends Option {
 	 * @param parser An instance of Parser that is linked to the option.
 	 * @param defaultValue The default value returned 
 	 * @param name The string that is used to call this option in the command line.
-	 * @param alias An alias for the name.
 	 */
 	@Deprecated
 	public NoOption(Parser parser, Object defaultValue, String name) {
 		super(parser, defaultValue, name, new BooleanParameter());
 
 	}
-	// PUBLIC METHODS
+	
+	////////////////////////
+	// Public Interface
 
 	/**
 	 * Parses that string that represents the arguments and set its value to the option.
 	 * This Option, do not needs an arguments. If any is found an IncorrectParameterTypeException is thrown.  
 	 * Calling this option, assumes that the return value is true.
 	 * 
-	 * @param string Is a string that represents the arguments for an option.
+	 * @param value Is a string that represents the arguments for an option.
 	 * @throws IncorrectParameterTypeException
 	 */
 	@Override

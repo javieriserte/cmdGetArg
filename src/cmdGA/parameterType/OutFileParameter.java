@@ -3,15 +3,15 @@ package cmdGA.parameterType;
 import java.io.File;
 
 import cmdGA.parameterType.ParameterType;
-
+/**
+ * This Class represents a File parameter in a command line.
+ * 
+ * @author Javier Iserte <jiserte@unq.edu.ar>
+ *
+ */
 public class OutFileParameter extends ParameterType {
-	/**
-	 * This Class represents a File parameter in a command line.
-	 * 
-	 * @author Javier Iserte <jiserte@unq.edu.ar>
-	 *
-	 */
-		protected static ParameterType singleton = new OutFileParameter();
+
+	protected static ParameterType singleton = new OutFileParameter();
 		/**
 		 * No instance variables are used, so there is no need of more than one instance.
 		 * A 'singleton' pattern is implemented. 
