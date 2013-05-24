@@ -18,5 +18,9 @@ CHANGE LOG
 	Ver 1.1.7 : Fixed a bug that crashes when a wrongly formed command line is sent to parse. 
                 	
 #Jan 31th, 2013
-	Ver 1.1.8 : Fixed a bug in MultipleOption that returns an array as default value instead of a single value. 
+	Ver 1.1.8 : Fixed a bug in MultipleOption that returns an array as default value instead of a single value.
+	
+#May 21th, 2013
+	Ver 1.1.9 : Single and Multiple options can be followed by no paramaters. Default value is assumed in these cases.  
+	 
                 	

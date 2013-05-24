@@ -101,7 +101,9 @@ public class Parser {
 					// optAsize is the length current option alias, if it exists. Is zero otherwise.
 					
 				if (string.regionMatches(true, toffset, optName, 0, optSize)) {
-					// if the option name is the first found in the command line  
+					// if the option name is the first found in the command line
+					
+					
 					positives.add(new Match(toffset,toffset + optSize,opt,false));
 						// Add a positive match to positives list.
 				}
@@ -157,7 +159,8 @@ public class Parser {
 		return null;
 		// returning null means that no more option remains in the command line. 
 	}
-	
+
+
 	/**
 	 * This method joins an array of String to a single string, interleaving each one with a space.
 	 * 

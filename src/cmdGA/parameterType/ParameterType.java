@@ -31,11 +31,17 @@ public abstract class ParameterType {
 	 * 
 	 */
 	public Object parseParameter(String parameter) throws IncorrectParameterTypeException {
+		
 		try {
+			
 			return this.parse(parameter);
+			
 		} catch (Exception e) {
+			
 			throw new IncorrectParameterTypeException("Parameter: \"" + parameter + "\" can not be parsed" );
+			
 		}
+		
 	}
 	
 	// PROTECTED METHODS	

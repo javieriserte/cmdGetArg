@@ -64,13 +64,22 @@ public class MultipleOption extends Option {
 	 */
 	@Override
 	public void setValue(String value) throws IncorrectParameterTypeException {
-		if (value.trim().isEmpty()) { throw new IncorrectParameterTypeException ("Option " + this.getName() + " needs at least one argument, but none were found"); }
+		if (value.trim().isEmpty()) { 
+			
+//			throw new IncorrectParameterTypeException ("Option " + this.getName() + " needs at least one argument, but none were found");
+			
+			this.values = null;
+			
+		} else {
+		
 		String[] p = value.split(((Character)separatingChar).toString());
 		List<Object> l = new Vector<Object>();
 		for (String string : p) {
 			l.add(this.type.parseParameter(string));
 		} 
 		this.values = l.toArray();
+		
+		}
 	}
 	/**
 	 * Count the number of arguments after the method setValue is used.
@@ -78,7 +87,17 @@ public class MultipleOption extends Option {
 	 * @return the number of arguments 
 	 */
 	public int count() {
-		if (this.values==null) return 0;
+		if (this.values==null) {
+			
+			if (this.defaultValue == null) {
+
+				return 0;
+				
+			} else {
+				
+				return 1;
+			}
+		}
 		return this.values.length;
 	}
 	/**
@@ -87,10 +106,15 @@ public class MultipleOption extends Option {
 	 * @return an Object of type represented by ParameterType
 	 */
 	public Object getValue(int position) {
+		
 		if (this.values==null) {
-			return ((Object[])this.defaultValue)[position];
+
+			if (position==1) return this.defaultValue;
+			
 		}
+		
 		return this.values[position];
+		
 	}
 	/**
 	 * Returns the collection of arguments. 
@@ -98,11 +122,13 @@ public class MultipleOption extends Option {
 	 */
 	public Object[] getValues() {
 		if (this.values==null) {
-			List<Object> r = new Vector<Object>();
-			r.add(this.defaultValue);
-			return r.toArray();
+			
+			return new Object[]{this.defaultValue};
+			
 		}
+		
 		return this.values;
+		
 	}
 	
 	// GETTERS & SETTERS
@@ -112,10 +138,5 @@ public class MultipleOption extends Option {
 	protected void setSeparatingChar(char separatingChar) {
 		this.separatingChar = separatingChar;
 	}
-
-
-	
-
-	
 
 }

@@ -54,8 +54,19 @@ public class SingleOption extends Option {
 	 */
 	@Override
 	public void setValue(String value) throws IncorrectParameterTypeException {
-		if (value.trim().isEmpty()) { throw new IncorrectParameterTypeException ("Option " + this.getName() + " needs one argument, but none were found"); }
+		
+		if (value.trim().isEmpty()) {
+			
+			// throw new IncorrectParameterTypeException ("Option " + this.getName() + " needs one argument, but none were found");
+			
+		    this.value = null;
+			
+		} else { 
+		
 		this.value = this.type.parseParameter(value);
+		
+		}
+		
 	}
 	/**
 	 * @return the value of the option

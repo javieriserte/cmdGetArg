@@ -15,6 +15,9 @@ import cmdGA.Parser;
 import cmdGA.SingleOption;
 import cmdGA.exceptions.IncorrectParameterTypeException;
 import cmdGA.parameterType.*;
+
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Examples of use of cmdGA package.
  *   
@@ -26,6 +29,14 @@ public class Example {
 	
 	public static void main(String[] arg) {
 
+		example_1();
+		
+		example_2();
+		
+	}
+
+	private static void example_1() {
+		String[] arg;
 		arg = "--greetings hi -float 0.34 -int 2 -val 1, 2, 3, 4, 5 --string \"this is a string\" --opt -bool true --va2 1".split(" ");
 		// arg contains a command line like array. 23/01
 		
@@ -57,7 +68,7 @@ public class Example {
 		} catch (IncorrectParameterTypeException e) {
 			System.out.println("Hubo un error:");
 			System.out.println(e.getMessage());
-			System.out.println("Ejecución finalizada");
+			System.out.println("Ejecuciï¿½n finalizada");
 			System.exit(1);
 		}
 		
@@ -94,7 +105,53 @@ public class Example {
 		for (int x=0;x<val2.count();x++) {
 			System.out.println("value of val2 at " + x +": " + val2.getValue(x));
 		}
+	}
+	
+	private static void example_2()  {
 		
+		String[] arg;
+		
+		arg = "-singleWithValue Hello -singleWithoutValue -multipleWithValue a,b,c,d -multipleWithoutValue".split(" ");
+
+		Parser parser = new Parser();
+		
+		SingleOption singleWithValueOpt = new SingleOption(parser, "Default", "-singleWithValue", StringParameter.getParameter());
+		
+		SingleOption singleWithoutValueOpt = new SingleOption(parser, "Default", "-singleWithoutValue", StringParameter.getParameter());
+		
+		MultipleOption multipleWithValueOpt = new MultipleOption(parser, "Default", "-multipleWithValue",',' ,StringParameter.getParameter());
+		
+		MultipleOption multipleWithoutValueOpt = new MultipleOption(parser, "Default" , "-multipleWithoutValue",',' ,StringParameter.getParameter());
+		
+		try {
+			parser.parseEx(arg);
+		} catch (IncorrectParameterTypeException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("singleWithValue is present: "+ singleWithValueOpt.isPresent());
+		
+		System.out.println("singleWithoutValue is present: "+ singleWithoutValueOpt.isPresent());
+		
+		System.out.println("value of singleWithValue is: "+ singleWithValueOpt.getValue().toString());
+		
+		System.out.println("value of singleWithoutValue is present: "+ singleWithoutValueOpt.getValue().toString());
+		
+		System.out.println("multipleWithValue is present: "+ multipleWithValueOpt.isPresent());
+		
+		System.out.println("multipleWithoutValue is present: "+ multipleWithoutValueOpt.isPresent());
+		
+		List<Object> l1 = new ArrayList<Object>();
+		
+		for (Object o : multipleWithValueOpt.getValues()) l1.add(o);
+		
+		System.out.println("value of multipleWithValue is: " + l1.toString());
+		
+		List<Object> l2 = new ArrayList<Object>();
+		
+		for (Object o : multipleWithoutValueOpt.getValues()) l2.add(o);
+		
+		System.out.println("value of multipleWithoutValue is present: "+ l2.toString());
 		
 	}
 	
