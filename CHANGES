@@ -21,6 +21,9 @@ CHANGE LOG
 	Ver 1.1.8 : Fixed a bug in MultipleOption that returns an array as default value instead of a single value.
 	
 #May 21th, 2013
-	Ver 1.1.9 : Single and Multiple options can be followed by no paramaters. Default value is assumed in these cases.  
+	Ver 1.1.9 : Single and Multiple options can be followed by no paramaters. Default value is assumed in these cases.
+	            Added an example.
+	            Corrected a bug un MultipleOption.
+	            Improved Javadoc documents.   
 	 
                 	
