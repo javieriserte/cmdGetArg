@@ -62,7 +62,7 @@ public class SingleOption extends Option {
 			
 		} else { 
 		
-		this.value = this.type.parseParameter(value);
+		this.value   = this.type.parseParameter(value);
 		
 		}
 		
