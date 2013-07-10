@@ -15,4 +15,16 @@ Next features and Fixes of cmdGetArg
 5 - NoOption must always be false by default.
     //DONE 
 6 - Make SingleOption and MultipleOption to be raw types. 
+7 - Include escape codes:
+     \n  New line
+     \t  Tab
+     \b  Backspace
+     \r  Carriage return
+     \f  Formfeed
+     \\  Backslash
+     \'  Single quotation mark
+     \"  Double quotation mark
+     \d  Octal
+     \xd Hexadecimal
+     \ud Unicode character
 	
