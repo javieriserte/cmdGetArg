@@ -27,4 +27,5 @@ Next features and Fixes of cmdGetArg
      \d  Octal
      \xd Hexadecimal
      \ud Unicode character
+ 8 - Make factory for common parameters, like inputstream and printstream
 	
