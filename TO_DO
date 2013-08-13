@@ -30,4 +30,5 @@ Next features and Fixes of cmdGetArg
  8 - Make factory for common parameters, like inputstream and printstream
  9 - Make two parser.parseEx methods. One managing error and the other thowring it.
  10 - Check for bug where the last parameter being a NoOption is not recognized 
+ 11 - Check for bug in NoOption where alias are not recognized
 	
