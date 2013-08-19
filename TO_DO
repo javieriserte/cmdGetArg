@@ -13,8 +13,9 @@ Next features and Fixes of cmdGetArg
 4 - Don't search options in quoted ("" or '') text.
     // WILL NOT BE DONE
 5 - NoOption must always be false by default.
-    //DONE 
+    // DONE 
 6 - Make SingleOption and MultipleOption to be raw types. 
+    // DONE
 7 - Include escape codes:
      \n  New line
      \t  Tab
@@ -25,10 +26,14 @@ Next features and Fixes of cmdGetArg
      \'  Single quotation mark
      \"  Double quotation mark
      \d  Octal
-     \xd Hexadecimal
-     \ud Unicode character
+     // DONE
  8 - Make factory for common parameters, like inputstream and printstream
+     // DONE
  9 - Make two parser.parseEx methods. One managing error and the other thowring it.
+     // DONE
  10 - Check for bug where the last parameter being a NoOption is not recognized 
+     // DONE
+     // Is Working OK 
  11 - Check for bug in NoOption where alias are not recognized
-	
+     // Is Working OK 
+ 	

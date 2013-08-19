@@ -25,5 +25,15 @@ CHANGE LOG
 	            Added an example.
 	            Corrected a bug un MultipleOption.
 	            Improved Javadoc documents.   
+	            
+#Aug 19th, 2013
+	Ver 2.1.1 : New design of the project, due to support generics.
+	            Escape codes can be accepted in the arguments.
+	            Factory for common Option.
+	            The new design is maintained as a separated set of classes.
+	            Old classes are maintained to support back compatibility. 
+	            
+	            
+	               
 	 
                 	
