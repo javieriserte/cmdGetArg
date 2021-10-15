@@ -11,25 +11,19 @@ package cmdGA2;
 
 /**
  * This class represents a match between a String and an Option object.
- * Contains information the site of the match in the String (position and ending) and the option of reference.
+ * Contains information the site of the match in the String (position and
+ * ending) and the option of reference.
  *
  * @author Javier Iserte <jiserte@unq.edu.ar>
  *
  */
 public class Match{
-	
-	//////////////////////
-	// Instance Variables
-	private int position;                                  // Starting position of the match                   
+	private int position;                                  // Starting position of the match
 	private int ending;                                    // Ending position of the match
 	private ArgOption<? extends Object> option;            // Option which is compared to String.
-	private boolean matchToAlias = false;                  // The match is against to the option.name or option.alias  
-	
-	///////////////////////
-	// Constructor
+	private boolean matchToAlias = false;                  // The match is against to the option.name or option.alias
 	/**
 	 * Create a new Match instance.
-	 * 
 	 * @param position The starting position match.
 	 * @param ending The ending position of the match.
 	 * @param option An instance of Option that matched.
@@ -42,12 +36,6 @@ public class Match{
 		this.setOption(option);
 		this.setMatchToAlias(matchToAlias);
 	}
-
-	//////////////////////////
-	// Public Interface
-
-	//////////////////////////
-	// Getters & Setters
 	public int getPosition() {
 		return position;
 	}

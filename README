@@ -17,7 +17,7 @@ Authors
 Requisites
 ----------
 JUnit (3.8.2) - http://sourceforge.net/projects/junit.
-JUnit is used to run tests only. 
+JUnit is used to run tests only.
 
 Documentation
 -------------
@@ -33,7 +33,7 @@ Package contents
   TO_DO                   : Modifications of future versions.
   VERSION                 : Version Log.
   README                  : This file.
-  
+
 Bug report
 ----------
 	Please send a mail to Javier Iserte <jiserte@unq.edu.ar> including the details of bugs.
